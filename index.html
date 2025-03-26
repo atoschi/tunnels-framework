@@ -33,12 +33,7 @@
       height: 500px;
     }
     #video-carousel .item {
-      padding-bottom: 3rem;
-      opacity: 0;
-      transition: opacity 1s ease-in-out;
-    }
-    #video-carousel .item.is-active {
-      opacity: 1;
+      padding-bottom: 4rem;
     }
     #video-carousel p {
       margin-top: 1rem;
@@ -118,38 +113,44 @@
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Demo Videos</h2>
-      <div id="video-carousel" class="carousel">
-        <div class="item has-text-centered">
-          <iframe src="https://www.youtube.com/embed/cFSAtg1hr0Y" frameborder="0" allowfullscreen></iframe>
-          <p>Autonomous Racing Test – Strategy Decision at Intersections</p>
+      <div id="video-carousel" class="carousel carousel-animated carousel-animate-slide" data-autoplay="true">
+        <div class="carousel-container">
+          <div class="carousel-item is-active has-text-centered">
+            <iframe src="https://www.youtube.com/embed/cFSAtg1hr0Y" frameborder="0" allowfullscreen></iframe>
+            <p>Autonomous Racing Test – Strategy Decision at Intersections</p>
+          </div>
+          <div class="carousel-item has-text-centered">
+            <iframe src="https://www.youtube.com/embed/5pjvA0LYoa4" frameborder="0" allowfullscreen></iframe>
+            <p>Reactive Overtaking Maneuver in a Tight Chicane</p>
+          </div>
+          <div class="carousel-item has-text-centered">
+            <iframe src="https://www.youtube.com/embed/fexd-C3Wn_M" frameborder="0" allowfullscreen></iframe>
+            <p>Planning under Traffic – Realistic Opponent Prediction</p>
+          </div>
+          <div class="carousel-item has-text-centered">
+            <iframe src="https://www.youtube.com/embed/aBKwmO-sxC4" frameborder="0" allowfullscreen></iframe>
+            <p>Corridor-Based Trajectory Planning with Moving Vehicles</p>
+          </div>
+          <div class="carousel-item has-text-centered">
+            <iframe src="https://www.youtube.com/embed/SjpjI25Dlzc" frameborder="0" allowfullscreen></iframe>
+            <p>Comparative Simulation of Overtake Strategies</p>
+          </div>
+          <div class="carousel-item has-text-centered">
+            <iframe src="https://www.youtube.com/embed/X5kt4qLyObU" frameborder="0" allowfullscreen></iframe>
+            <p>Drivable Area Prediction and Dynamic Constraints</p>
+          </div>
+          <div class="carousel-item has-text-centered">
+            <iframe src="https://www.youtube.com/embed/-nhhV_Smd68" frameborder="0" allowfullscreen></iframe>
+            <p>Integration of Decision-Making and MPC in Multi-Agent Scenarios</p>
+          </div>
+          <div class="carousel-item has-text-centered">
+            <iframe src="https://www.youtube.com/embed/LVrsKWe-ajY" frameborder="0" allowfullscreen></iframe>
+            <p>Experimental Run at Yas Marina Circuit – Real-time Strategy Switching</p>
+          </div>
         </div>
-        <div class="item has-text-centered">
-          <iframe src="https://www.youtube.com/embed/5pjvA0LYoa4" frameborder="0" allowfullscreen></iframe>
-          <p>Reactive Overtaking Maneuver in a Tight Chicane</p>
-        </div>
-        <div class="item has-text-centered">
-          <iframe src="https://www.youtube.com/embed/fexd-C3Wn_M" frameborder="0" allowfullscreen></iframe>
-          <p>Planning under Traffic – Realistic Opponent Prediction</p>
-        </div>
-        <div class="item has-text-centered">
-          <iframe src="https://www.youtube.com/embed/aBKwmO-sxC4" frameborder="0" allowfullscreen></iframe>
-          <p>Corridor-Based Trajectory Planning with Moving Vehicles</p>
-        </div>
-        <div class="item has-text-centered">
-          <iframe src="https://www.youtube.com/embed/SjpjI25Dlzc" frameborder="0" allowfullscreen></iframe>
-          <p>Comparative Simulation of Overtake Strategies</p>
-        </div>
-        <div class="item has-text-centered">
-          <iframe src="https://www.youtube.com/embed/X5kt4qLyObU" frameborder="0" allowfullscreen></iframe>
-          <p>Drivable Area Prediction and Dynamic Constraints</p>
-        </div>
-        <div class="item has-text-centered">
-          <iframe src="https://www.youtube.com/embed/-nhhV_Smd68" frameborder="0" allowfullscreen></iframe>
-          <p>Integration of Decision-Making and MPC in Multi-Agent Scenarios</p>
-        </div>
-        <div class="item has-text-centered">
-          <iframe src="https://www.youtube.com/embed/LVrsKWe-ajY" frameborder="0" allowfullscreen></iframe>
-          <p>Experimental Run at Yas Marina Circuit – Real-time Strategy Switching</p>
+        <div class="carousel-navigation is-centered">
+          <div class="carousel-nav-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+          <div class="carousel-nav-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
         </div>
       </div>
     </div>
@@ -164,8 +165,7 @@
     autoplaySpeed: 5000,
     loop: true,
     navigation: true,
-    pagination: true,
-    effect: 'fade'
+    pagination: true
   });
 </script>
 
