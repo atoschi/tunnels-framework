@@ -32,13 +32,24 @@
       background-color: white;
       padding: 2rem 1rem;
     }
-    .carousel-item iframe {
-      max-width: 100%;
-      aspect-ratio: 16/9;
+    .carousel-item .video-wrapper {
+      position: relative;
+      width: 80%;
+      margin: 0 auto;
+      padding-top: 56.25%; /* 16:9 */
+    }
+    .carousel-item .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
     }
     .carousel-item p {
       margin-bottom: 1rem;
       font-weight: 500;
+      text-align: center;
     }
   </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -113,37 +124,53 @@
     <div class="container">
       <h2 class="title is-3">Demo Videos</h2>
       <div id="video-carousel" class="carousel">
-        <div class="carousel-item has-text-centered">
+        <div class="carousel-item">
           <p>Autonomous Racing Test – Strategy Decision at Intersections</p>
-          <iframe src="https://www.youtube.com/embed/cFSAtg1hr0Y" frameborder="0" allowfullscreen></iframe>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/cFSAtg1hr0Y" allowfullscreen></iframe>
+          </div>
         </div>
-        <div class="carousel-item has-text-centered">
+        <div class="carousel-item">
           <p>Reactive Overtaking Maneuver in a Tight Chicane</p>
-          <iframe src="https://www.youtube.com/embed/5pjvA0LYoa4" frameborder="0" allowfullscreen></iframe>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/5pjvA0LYoa4" allowfullscreen></iframe>
+          </div>
         </div>
-        <div class="carousel-item has-text-centered">
+        <div class="carousel-item">
           <p>Planning under Traffic – Realistic Opponent Prediction</p>
-          <iframe src="https://www.youtube.com/embed/fexd-C3Wn_M" frameborder="0" allowfullscreen></iframe>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/fexd-C3Wn_M" allowfullscreen></iframe>
+          </div>
         </div>
-        <div class="carousel-item has-text-centered">
+        <div class="carousel-item">
           <p>Corridor-Based Trajectory Planning with Moving Vehicles</p>
-          <iframe src="https://www.youtube.com/embed/aBKwmO-sxC4" frameborder="0" allowfullscreen></iframe>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/aBKwmO-sxC4" allowfullscreen></iframe>
+          </div>
         </div>
-        <div class="carousel-item has-text-centered">
+        <div class="carousel-item">
           <p>Comparative Simulation of Overtake Strategies</p>
-          <iframe src="https://www.youtube.com/embed/SjpjI25Dlzc" frameborder="0" allowfullscreen></iframe>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/SjpjI25Dlzc" allowfullscreen></iframe>
+          </div>
         </div>
-        <div class="carousel-item has-text-centered">
+        <div class="carousel-item">
           <p>Drivable Area Prediction and Dynamic Constraints</p>
-          <iframe src="https://www.youtube.com/embed/X5kt4qLyObU" frameborder="0" allowfullscreen></iframe>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/X5kt4qLyObU" allowfullscreen></iframe>
+          </div>
         </div>
-        <div class="carousel-item has-text-centered">
+        <div class="carousel-item">
           <p>Integration of Decision-Making and MPC in Multi-Agent Scenarios</p>
-          <iframe src="https://www.youtube.com/embed/-nhhV_Smd68" frameborder="0" allowfullscreen></iframe>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/-nhhV_Smd68" allowfullscreen></iframe>
+          </div>
         </div>
-        <div class="carousel-item has-text-centered">
+        <div class="carousel-item">
           <p>Experimental Run at Yas Marina Circuit – Real-time Strategy Switching</p>
-          <iframe src="https://www.youtube.com/embed/LVrsKWe-ajY" frameborder="0" allowfullscreen></iframe>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/LVrsKWe-ajY" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </div>
