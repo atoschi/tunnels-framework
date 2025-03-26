@@ -2,41 +2,31 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta name="description" content="A modular and interaction-aware trajectory planning framework for multi-agent autonomous racing, combining high-level decision-making and MPC.">
+  <meta name="keywords" content="Autonomous Racing, Multi-Agent Planning, Trajectory Optimization, Model Predictive Control, Drivable Area, Overtaking Decision-Making">
+
+  <meta property="og:title" content="Multi-Agent Planning for Autonomous Racing"/>
+  <meta property="og:description" content="A modular framework combining drivable area computation, decision-making, and MPC for robust planning in competitive autonomous racing."/>
+  <meta property="og:url" content="https://atoschi.github.io/tunnels-framework/"/>
+  <meta property="og:image" content="static/images/banner.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-
-  <meta name="twitter:title" content="Multi-Agent Planning">
-  <meta name="twitter:description" content="Modular Decision-Making and Drivable Areas for Multi-Agent Autonomous Racing">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:title" content="Multi-Agent Planning for Autonomous Racing">
+  <meta name="twitter:description" content="Interaction-aware planning and overtaking strategy for autonomous racing using modular decision-making and drivable areas.">
+  <meta name="twitter:image" content="static/images/twitter_banner.png">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
   <title>Multi-Agent Planning</title>
   <link rel="icon" type="image/x-icon" href="static/images/racing-car.png">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
@@ -46,82 +36,25 @@
 </head>
 <body>
 
-
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Modular Decision-Making and Drivable Areas for Multi-Agent Autonomous Racing</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://www.linkedin.com/in/alessandro-toschi-52757715b/" target="_blank">Alessandro Toschi</a>,</span>
-                <span class="author-block">
-                  <a target="_blank">Francesco Prignoli</a>,</span>
-                  <span class="author-block">
-                    <a target="_blank">Marko Bertogna</a>
-                  </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">University of Modena and Reggio Emilia</span><!--<br>Conferance name and year</span>-->
-                    <!--<span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>-->
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <!--<span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>-->
-
-                    <!-- Supplementary PDF link -->
-                    <!--<span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>-->
-
-                  <!-- Github link -->
-                  <!-- <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>-->
-
-                <!-- ArXiv abstract Link -->
-                <!-- <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>-->
-                </a>
-              </span>
-            </div>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Modular Decision-Making and Drivable Areas for Multi-Agent Autonomous Racing</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><a href="https://www.linkedin.com/in/alessandro-toschi-52757715b/" target="_blank">Alessandro Toschi</a>,</span>
+            <span class="author-block"><a target="_blank">Francesco Prignoli</a>,</span>
+            <span class="author-block"><a target="_blank">Marko Bertogna</a></span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">University of Modena and Reggio Emilia</span>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 
 <!-- Teaser video-->
 <section class="hero teaser">
@@ -160,48 +93,59 @@
 </section>
 <!-- End paper abstract -->
 
-
-<!-- Image carousel -->
-<!--<section class="hero is-small">
+<!-- Carousel of demo videos -->
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <!-- <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+      <h2 class="title is-3">Demo Videos</h2>
+      <div id="video-carousel" class="carousel">
+        <div class="item has-text-centered">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/cFSAtg1hr0Y" frameborder="0" allowfullscreen></iframe>
+          <p>Video 1</p>
+        </div>
+        <div class="item has-text-centered">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/5pjvA0LYoa4" frameborder="0" allowfullscreen></iframe>
+          <p>Video 2</p>
+        </div>
+        <div class="item has-text-centered">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/fexd-C3Wn_M" frameborder="0" allowfullscreen></iframe>
+          <p>Video 3</p>
+        </div>
+        <div class="item has-text-centered">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/aBKwmO-sxC4" frameborder="0" allowfullscreen></iframe>
+          <p>Video 4</p>
+        </div>
+        <div class="item has-text-centered">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/SjpjI25Dlzc" frameborder="0" allowfullscreen></iframe>
+          <p>Video 5</p>
+        </div>
+        <div class="item has-text-centered">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/X5kt4qLyObU" frameborder="0" allowfullscreen></iframe>
+          <p>Video 6</p>
+        </div>
+        <div class="item has-text-centered">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/-nhhV_Smd68" frameborder="0" allowfullscreen></iframe>
+          <p>Video 7</p>
+        </div>
+        <div class="item has-text-centered">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/LVrsKWe-ajY" frameborder="0" allowfullscreen></iframe>
+          <p>Video 8</p>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <!-- <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <!-- <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <!--<img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
 
-
-
+<script>
+  bulmaCarousel.attach('#video-carousel', {
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    autoplay: false,
+    loop: true,
+    navigation: true,
+    pagination: true
+  });
+</script>
 
 <!-- Youtube video - Figure 8 --> 
 <section class="hero is-small is-light">
@@ -263,92 +207,8 @@
 </section>
 <!-- End youtube video -->
 
+</body>
+</html>
 
 
 
-
-<!-- Video carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <!--<source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <!--<source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <!--<source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-<!-- Paper poster -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section> -->
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <!--<section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
