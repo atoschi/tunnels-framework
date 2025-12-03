@@ -48,4 +48,240 @@
       border: none;
     }
   </style>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.j
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Modular Decision-Making and Drivable Areas for Multi-Agent Autonomous Racing</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><a href="https://www.linkedin.com/in/alessandro-toschi-52757715b/" target="_blank">Alessandro Toschi</a>,</span>
+            <span class="author-block"><a target="_blank">Francesco Prignoli</a>,</span>
+            <span class="author-block"><a target="_blank">Marko Bertogna</a></span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">University of Modena and Reggio Emilia</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="video-container">
+        <iframe width="100%" height="450"
+          src="https://www.youtube.com/embed/-ard9iAo2Sg?si=1HGHVMCxB_afxLKj"
+          frameborder="0" 
+          allow="autoplay; encrypted-media" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        Fastest UNIMORE Racing overtake during the Indy Autonomous Challenge at Indianapolis Motor Speedway 2024
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            This paper presents an interaction-aware, modular framework for local trajectory planning in autonomous driving, particularly suited for multi-agent racing scenarios. The framework first identifies viable drivable areas (“tunnels”), taking into account predictions of other agents’ behaviors, and subsequently utilizes a high-level decision-making module to select the optimal corridor considering both static and moving vehicles. This decision-making module also strategically determines when to follow an opponent or initiate an overtaking maneuver, while ensuring compliance with racing regulations. A Model Predictive Control (MPC) module is then employed to compute an optimal, collision-free trajectory within the chosen corridor. The proposed modular architecture reduces the computational complexity typically associated with MPC optimization and facilitates independent component testing. Simulations and real-world tests on various racing tracks demonstrate the efficacy of our approach, even in highly dynamic interactive scenarios with multiple simultaneous opponents. Videos of these and additional experiments are available at <a href="https://atoschi.github.io/tunnels-framework/" target="_blank">https://atoschi.github.io/tunnels-framework/</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Carousel of demo videos -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Assetto Corsa simulations</h2>
+      <p class="subtitle is-5">
+        A set of simulations demonstrating overtaking at Yas Marina Circuit using Super Formula SF23 mods.
+        The platform includes active opponents that react to the ego vehicle and supports simulated collisions, making it suitable for
+        evaluating wheel-to-wheel interactions and highly aggressive maneuvers with small overtaking margins.
+        In this environment, localization and vehicle detection are idealized and not simulated, but the absence of opponent forecasting actually provides a realistic setup, since in real races the future actions of other agents
+        cannot be known with certainty.
+        Opponents were configured to behave aggressively, while their engine torque was slightly reduced to make interaction testing easier
+        by adjusting the ego vehicle’s speed and accelerations.
+        The interfaces used to connect Assetto Corsa with external planners and controllers are open-source and described here: <a href="https://assetto-corsa-gym.github.io/" target="_blank">https://assetto-corsa-gym.github.io/</a>.
+      </p>
+      <div id="video-carousel" class="carousel">
+        <div class="carousel-item">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/cFSAtg1hr0Y" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/5pjvA0LYoa4" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/fexd-C3Wn_M" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <p>Corridor-based trajectory planning with moving vehicles</p>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/aBKwmO-sxC4" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <p>Comparative simulation of overtake strategies</p>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/SjpjI25Dlzc" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/X5kt4qLyObU" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/-nhhV_Smd68" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/LVrsKWe-ajY" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  bulmaCarousel.attach('#video-carousel', {
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    loop: true,
+    navigation: true,
+    pagination: true
+  });
+</script>
+  
+<!-- Youtube video - Figure 8 --> 
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Real-world overtake at Indianapolis Motor Speedway</h2>
+      <p class="subtitle is-5">
+        Video of the time sequence presented in Figure 8 of the paper, showing the graphical user interface and vehicle camera views (teaser video).
+      </p>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <!-- Youtube embed code here -->
+            <iframe src="https://www.youtube.com/embed/xHNL2yvLBUM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+<!-- Youtube video - Figure 9 --> 
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Real-world overtake at Las Vegas Motor Speedway</h2>
+      <p class="subtitle is-5">
+        Video of the time sequence presented in Figure 9 of the paper, showing AV24 onboard footage during testing.
+      </p>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <!-- Youtube embed code here -->
+            <iframe src="https://www.youtube.com/embed/7in41qI9jg8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+
+<!-- Youtube video - Autonoma -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Autonoma Autoverse simulation</h2>
+      <p class="subtitle is-5">
+        Different overtake scenarios at Yas Marina Circuit using the Autonoma Autoverse simulator. The main advantage of this environment is the ability to configure opponents easily. Although not in this specific clip, the same simulator was also used to compete in a championship against other autonomous racing teams.
+        In this simulation, a script periodically spawns new opponents on random racing lines with random speeds (always lower than the ego vehicle’s speed) and resets them every 30 seconds, whether the overtakes were completed or not. The objective was to generate a broader variety of scenarios compared to nominal, hand-crafted ones.
+      </p>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="publication-video">
+            <!-- Youtube embed code here -->
+            <iframe src="https://www.youtube.com/embed/uCQHHqUNmbM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+
+<!-- Youtube video - FMU -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Multi-body simulation</h2>
+      <p class="subtitle is-5">
+        Extensive run at Yas Marina Circuit using UNIMORE Racing’s proprietary multi-body simulator. In this case, the opponent forecasting model is idealized, but the opponents simply follow a predefined racing line and do not react to the ego vehicle. The objective was to validate the overtaking maneuvers in the most realistic simulator available in terms of vehicle dynamics, and to further tune the MPC.
+      </p>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="publication-video">
+            <!-- Youtube embed code here -->
+            <iframe src="https://www.youtube.com/embed/2l8DsILx5NA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+</body>
+</html>
